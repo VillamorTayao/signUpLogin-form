@@ -1,0 +1,46 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 280px;
+    box-sizing: border-box;
+}
+
+.container form{
+    width: 300px;
+    background-color: lightgreen;
+    padding: 25px 25px;
+}
+
+.container form input[type="text"], 
+                input[type="password"], 
+                input[type="email"]{
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 5px 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    outline: none;
+}
+
+.submit-position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-position input{
+    width: 30%;
+    max-width: 100%;
+    padding: 5px 10px;
+}
+
+.login-postion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
