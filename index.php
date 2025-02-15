@@ -18,6 +18,7 @@
         </div>
 
         <form action="index.php" method="post">
+            <p style="margin-top: 0; font-size: 25px;">Sign Up</p>
             <label>Username</label>
             <input type="text" name="username" id="username" required>
 
