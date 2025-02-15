@@ -8,6 +8,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/index.css?v=<?php echo time(); ?>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
     <title>Sign Up!</title>
 </head>
 <body>
@@ -18,7 +21,7 @@
         </div>
 
         <form action="index.php" method="post">
-            <p style="margin-top: 0; font-size: 25px;">Sign Up</p>
+            <p style="margin-top: 0; font-size: 25px; font-weight: 700;">Sign Up</p>
             <label>Username</label>
             <input type="text" name="username" id="username" required>
 
