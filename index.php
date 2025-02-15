@@ -7,34 +7,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/index.css?v=<?php echo time(); ?>">
     <title>Sign Up!</title>
 </head>
 <body>
     <div class="container">
         <div class="info">
-            Hello!
+            Hello! 
+            <p>This is my Sign Up and Login Form project as an introduction on using PHP!</p>
         </div>
 
         <form action="index.php" method="post">
             <label>Username</label>
             <input type="text" name="username" id="username" required>
 
-            <label>Password</label>
-            <input type="password" name="password" id="password" required>
+            <div class="password-setup">
+                <label>Password</label>
+                <input type="password" name="password" id="password" required>
+                <span class="show-password" id="show-password"><img src="assets/eye-password-hide-svgrepo-com.svg" alt="hide-password" id="show-password-icon"></span>
+            </div>
 
             <label>Email</label>
             <input type="email" name="email" id="email" required>
-
+            
             <div class="submit-position">
                 <input type="submit" name="signup" value="Sign Up">
             </div>
+
+            <hr style="margin-top: 20px; border-color: B7B7B7;">
             
             <div class="login-position">
                 Already have an account?<a href="login.php">Login!</a>
             </div>
         </form>
     </div>
+
+    <script src="./scripts/index.js?v=<?php echo time(); ?>"></script>
 </body>
 </html>
 

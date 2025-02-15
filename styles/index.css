@@ -2,19 +2,53 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 280px;
+    margin-top: 250px;
     box-sizing: border-box;
 }
 
+@media only screen and (max-width: 500px){
+    .container{
+        flex-direction: column;
+    }
+}
+
 .container .info{
-    width: 300px;
-    background-color: blue;
+    width: 200px;
+    height: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 40px;
+    font-size: 25px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container form .password-setup{
+    position: relative;
+}
+
+.container form img{
+    position: absolute;
+    top: 35px;
+    right: 12px;
+    height: 20px;
+}
+
+.container form .show-password{
+    cursor: pointer;
+}
+.container form .show-password:hover{
+    opacity: 0.5;
 }
 
 .container form{
     width: 300px;
+    height: 320px;
     background-color: lightgreen;
-    padding: 25px 25px;
+    padding: 50px 50px;
+    box-shadow: 10px 10px 14px rgba(0, 0, 0, 0.5);
 }
 
 .container form input[type="text"], 
@@ -23,11 +57,12 @@
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
-    padding: 5px 15px;
+    padding: 10px 15px;
     margin-top: 5px;
     margin-bottom: 10px;
     border: 1px solid blue;
     border-radius: 10px;
+    font-size: 18px;
     outline: none;
 }
 
@@ -35,17 +70,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 15px;
 }
 
 .submit-position input{
-    width: 30%;
+    width: 50%;
     max-width: 100%;
     padding: 5px 10px;
 }
 
-.login-position{
+.container form .login-position{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 15px;
+    margin-top: 15px;
 }
