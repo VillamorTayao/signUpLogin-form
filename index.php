@@ -12,6 +12,10 @@
 </head>
 <body>
     <div class="container">
+        <div class="info">
+            Hello!
+        </div>
+
         <form action="index.php" method="post">
             <label>Username</label>
             <input type="text" name="username" id="username" required>
@@ -26,7 +30,7 @@
                 <input type="submit" name="signup" value="Sign Up">
             </div>
             
-            <div class="login-postion">
+            <div class="login-position">
                 Already have an account?<a href="login.php">Login!</a>
             </div>
         </form>
