@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
     <title>Sign Up!</title>
 </head>
-<body>
+<body style="background-color: gray;">
     <div class="container">
         <div class="info">
             Hello! 
@@ -66,10 +66,18 @@
 
         try{
             if(mysqli_num_rows($inputs) > 0){
-                echo "Username already exist!";
+                echo '
+                <div class="popup">
+                    Username already exists! Try Again.
+                </div>
+                ';
             } else {
                 mysqli_query($connection, $sql_query);
-                echo "Registered!";
+                echo '
+                <div class="popup">
+                    Successfully Registered!
+                </div>
+                ';
             }
         } catch (Exception){
             echo "Something is wrong!";

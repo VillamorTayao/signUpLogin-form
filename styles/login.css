@@ -1,0 +1,165 @@
+body{
+    font-family: "Silkscreen", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 230px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 500px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+}
+
+.popup{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: visible;
+    animation: 0.5s ease-in-out popup, fadeOut 0.5s ease-in-out 2s forwards;
+    font-size: 20px;
+    color: rgb(100, 100, 100);
+    background-color: rgb(0, 177, 0);
+    border: none;
+    border-radius: 10px;
+    padding: 20px 20px;
+    width: 250px;
+    height: 50px;
+    z-index: 200;
+}
+@keyframes popup {
+    from {opacity: 0; scale: 0;}
+    to {opacity: 1; scale: 1;}
+}
+
+@keyframes fadeOut {
+    from {opacity: 1; scale: 1;}
+    to {opacity: 0; scale: 0;}
+}
+
+.container .info{
+    width: 300px;
+    max-width: 100%;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 50px;
+    font-size: 25px;
+    box-shadow: 10px 10px 14px rgba(0, 0, 0, 0.5);
+}
+
+.container form .password-setup{
+    position: relative;
+}
+
+.container form img{
+    height: 20px;
+    position: absolute;
+    top: 35px;
+    right: 12px;
+}
+
+.container form .show-password{
+    cursor: pointer;
+}
+.container form .show-password:hover{
+    opacity: 0.5;
+}
+
+
+.container form{
+    width: 300px;
+    height: 420px;
+    background-color: lightblue;
+    padding: 50px 50px;
+    box-shadow: 10px 10px 14px rgba(0, 0, 0, 0.5);
+}
+
+.container form input[type="text"], 
+                input[type="password"], 
+                input[type="email"]{
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    font-size: 18px;
+    outline: none;
+}
+
+.login-position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.login-position input{
+    width: 50%;
+    max-width: 100%;
+    padding: 10px 15px;
+    background-color: rgb(64, 64, 255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.container form .signup-position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.container form .other-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container form .other-options .options{
+    flex-direction: row;
+    align-items: center;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+.container form .other-options .options img{
+    position: inherit;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 2px 2px;
+    box-sizing: border-box;
+}
+
+.container form .other-options .options img:hover{
+    border: solid;
+    border-width: 0.05;
+    border-color: black;
+    border-radius: 4px;
+    transition: border 0.2s;
+    scale: 1.5;
+}
